@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>Winnie's  mini  Blog</title>
+
+    <!-- <link rel="canonical" href="標準網址"/> -->
+    <!-- <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/blog/"> -->
+
+    <!-- Bootstrap core CSS -->
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+
+    <!-- Custom styles for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900&display=swap" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="./assets/css/blog.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <div class="container">
+      <header class="blog-header py-3">
+        <div class="row flex-nowrap justify-content-between align-items-center">
+          <div class="col-4 pt-1"></div>
+          <div class="col-4 text-center">
+            <span class="blog-header-logo text-dark">Winnie's&nbsp;</span>
+            <span class="link-secondary">mini Blog</span>
+          </div>
+          <div class="col-4 d-flex justify-content-end align-items-center">
+            <!-- <a class="link-secondary" href="#" aria-label="Search">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-3" role="img" viewBox="0 0 24 24"><title>Search</title><circle cx="10.5" cy="10.5" r="7.5"/><path d="M21 21l-5.2-5.2"/></svg>
+            </a>
+            <a class="btn btn-sm btn-outline-secondary" href="#">Sign up</a> -->
+          </div>
+        </div>
+      </header>
+      <!-- Nav list -->
+      <div class="nav-scroller py-1 mb-2">
+        <nav class="nav d-flex justify-content-between">
+          <!--
+          <a class="p-2 link-secondary" href="#">Technology</a>
+          <a class="p-2 link-secondary" href="#">Design</a>
+          <a class="p-2 link-secondary" href="#">Travel</a> -->
+        </nav>
+      </div>
+    </div>
+
+    <main class="container">
+      <!-- 焦點 -->
+      <div class="row mb-2">
+        <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-primary">技術</strong>
+              <h3 class="mb-0">tar 壓縮與解壓縮指令</h3>
+              <div class="mb-1 text-muted">August 3, 2021</div>
+              <p class="card-text mb-auto">tar 壓縮與解壓縮指令 - 常用參數...</p>
+              <a class="btn btn-outline-secondary stretched-link" href="#command-tar">閱讀更多</a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img class="bd-placeholder-img"  width="200" height="250"  src="https://images.pexels.com/photos/2004161/pexels-photo-2004161.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-primary">技術</strong>
+              <h3 class="mb-0">chmod 改變使用權限指令</h3>
+              <div class="mb-1 text-muted">August 2, 2021</div>
+              <p class="mb-auto">chmod 改變使用權限指令 - 常用參數...</p>
+              <a class="btn btn-outline-secondary stretched-link" href="#command-chmod">閱讀更多</a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img class="bd-placeholder-img"  width="200" height="250"  src="https://images.pexels.com/photos/2004161/pexels-photo-2004161.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 文章區 -->
+      <div class="row g-5">
+        <div class="col-md-8">
+          <article class="blog-post" id="command-tar">
+            <h2 class="blog-post-title">tar 壓縮與解壓縮指令</h2>
+            <p class="blog-post-meta">August 3, 2021&emsp;|&emsp;技術</p>
+            <h3>常用參數</h3>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th width="50">參數</th>
+                        <th>說明</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>-c</td>
+                        <td>打包檔案</td>
+                    </tr>
+                    <tr>
+                        <td>-x</td>
+                        <td>解開壓縮檔</td>
+                    </tr>
+                    <tr>
+                        <td>-t</td>
+                        <td>檢視壓縮檔的內容</td>
+                    </tr>
+                    <tr>
+                        <td>-z</td>
+                        <td>使用 gzip 壓縮</td>
+                    </tr>
+                    <tr>
+                        <td>-v</td>
+                        <td>顯示壓縮/解壓縮執行過程</td>
+                    </tr>
+                    <tr>
+                        <td>-P</td>
+                        <td>使用絕對路徑</td>
+                    </tr>
+                    <tr>
+                        <td>-f</td>
+                        <td>指定壓縮檔後的檔案名稱 (此參數的後面要接檔案名稱，通常是把 <span class="badge bg-dark">f</span> 參數放最後或是與分開使用)</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3 class="mt-5">壓縮範例</h3>
+            <div class="code-block">
+              <pre class="mb-0"><code>tar -czvf <span class="badge bg-secondary">壓縮檔名稱.tgz</span> <span class="badge bg-secondary">來源檔案</span></code></pre>
+            </div>
+            <h3 class="mt-5">解壓縮指令</h3>
+            <div class="code-block">
+              <pre class="mb-0"><code>tar -xzvf <span class="badge bg-secondary">壓縮檔名稱.tgz</span></code></pre>
+            </div>
+          </article>
+
+          <article class="blog-post" id="command-chmod">
+            <h2 class="blog-post-title">chmod 改變使用權限指令</h2>
+            <p class="blog-post-meta">August 2, 2021&emsp;|&emsp;技術</p>
+            <h3>常用參數</h3>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th width="50">參數</th>
+                        <th>說明</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>-R</td>
+                        <td>遞迴變更(所有檔案及其子目錄)</td>
+                    </tr>
+                    <tr>
+                        <td>權限</td>
+                        <td>基本權限字元為 <code>-rwxrwxrwx</code> (共9個)。<br>
+                          順序為三個角色 <span class="badge bg-dark">owner</span> <span class="badge bg-dark">group</span> <span class="badge bg-dark">others</span>，各別的角色分別擁有三個執行權限 <span class="badge bg-dark">read</span> <span class="badge bg-dark">write</span> <span class="badge bg-dark">execute</span> 而組成。<br>
+                          權限的分數為:<br> 4: r(read)<br> 2: w(write)<br> 1: x(execute) <br><br>
+                          例如: 當權限為<code>-rwxr-xr-x</code> 分數則是 <code>755</code> (owner擁有全部權限，group與others則有讀與執行的權限)。
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3 class="mt-5">範例</h3>
+            <div class="code-block">
+              <code class="text-muted"># 改權限為 -rwxr-xr--</code>
+              <pre class="mb-0"><code>chmod 754 <span class="badge bg-secondary">檔案名稱</span></code></pre>
+              <pre class="mb-0"><code>chmod -R 754 <span class="badge bg-secondary">目錄名稱</span></code></pre>
+            </div>
+          </article>
+
+          <article class="blog-post" id="command-chown">
+            <h2 class="blog-post-title">chown 改變檔案擁有者指令</h2>
+            <p class="blog-post-meta">August 1, 2021&emsp;|&emsp;技術</p>
+            <h3>常用參數</h3>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th width="50">參數</th>
+                        <th>說明</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>-R</td>
+                        <td>遞迴變更(所有檔案及其子目錄)</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3 class="mt-5">範例</h3>
+            <div class="code-block">
+              <pre class="mb-0"><code>chown <span class="badge bg-secondary">使用者:使用者群組</span> <span class="badge bg-secondary">檔案名稱</span></code></pre>
+              <pre class="mb-0"><code>chown -R <span class="badge bg-secondary">使用者:使用者群組</span> <span class="badge bg-secondary">目錄名稱</span></code></pre>
+              <br>
+              <code class="text-muted"># 原檔案擁有者為root，改為www-data</code>
+              <pre class="mb-0"><code>chown www-data:www-data <span class="badge bg-secondary">檔案名稱</span></code></pre>
+            </div>
+          </article>
+
+          <nav class="blog-pagination" aria-label="Pagination">
+            <a class="btn btn-outline-primary" href="#">舊文章</a>
+            <a class="btn btn-outline-secondary disabled" href="#" tabindex="-1" aria-disabled="true">最新文章</a>
+          </nav>
+
+        </div>
+
+        <!-- right side -->
+        <div class="col-md-4">
+          <div class="position-sticky" style="top: 2rem;">
+            <div class="p-4 mb-3 bg-light rounded">
+              <h4 class="fst-italic">About</h4>
+              <p class="mb-0">Just a mini blog. A little bit about my articles, content, or something else entirely.</p>
+            </div>
+            <!-- 文章列表 -->
+            <div class="p-4">
+              <h3>文章</h3>
+              <ul class="list-group list-group-flush">
+                <a href="#command-tar" class="list-group-item list-group-item-action">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">tar 壓縮與解壓縮指令</h5>
+                    <small>技術</small>
+                  </div>
+                  <small class="text-muted">August 3, 2021</small>
+                </a>
+                <a href="#command-chmod" class="list-group-item list-group-item-action">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">chmod 改變使用權限指令</h5>
+                    <small>技術</small>
+                  </div>
+                  <small class="text-muted">August 2, 2021</small>
+                </a>
+                <a href="#command-chown" class="list-group-item list-group-item-action">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">chown 改變檔案擁有者指令</h5>
+                    <small>技術</small>
+                  </div>
+                  <small class="text-muted">August 1, 2021</small>
+                </a>
+              </ul>
+            </div>
+
+            <!-- 廣告區 -->
+            <div class="p-4 mt-5">
+              <!-- <h4 class="fst-italic" >Elsewhere</h4> -->
+              <h3>AP策略聯盟</h3>
+              <ol class="list-unstyled">
+                <li><iframe src="https://www.books.com.tw/sticker/book66/" width="175" height="270" frameborder="0" scrolling="no" marginwidth="0" allowtransparency="true"></iframe></li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="blog-footer">
+      <p>Copyright © Winnie's  mini  Blog</p>
+    </footer>
+    <!-- Back to top -->
+    <a href="#" class="btn btn-outline-secondary btn-lg position-fixed" style="bottom:5%; right:10%;" data-bs-toggle="tooltip" data-bs-placement="top" title="Back to top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-bar-up" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5zm-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5z" />
+        </svg>
+    </a>
+    <!-- Bootstrap core JS -->
+    <script src="./assets/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>
