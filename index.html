@@ -7,10 +7,7 @@
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.84.0">
     <title>Winnie's  mini  Blog</title>
-
-    <!-- <link rel="canonical" href="標準網址"/> -->
-    <!-- <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/blog/"> -->
-
+    <link rel="canonical" href="https://winnewu.github.io/blog/">
     <!-- Bootstrap core CSS -->
     <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
 
@@ -78,7 +75,7 @@
               <a class="btn btn-outline-secondary stretched-link" href="#command-tar">閱讀更多</a>
             </div>
             <div class="col-auto d-none d-lg-block">
-              <img class="bd-placeholder-img"  width="200" height="250"  src="https://images.pexels.com/photos/2004161/pexels-photo-2004161.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
+              <img class="bd-placeholder-img"  width="200" height="250"  src="https://images.pexels.com/photos/2004161/pexels-photo-2004161.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="tar 壓縮與解壓縮指令">
             </div>
           </div>
         </div>
@@ -86,13 +83,13 @@
           <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
             <div class="col p-4 d-flex flex-column position-static">
               <strong class="d-inline-block mb-2 text-primary">技術</strong>
-              <h3 class="mb-0">chmod 改變使用權限指令</h3>
-              <div class="mb-1 text-muted">August 2, 2021</div>
-              <p class="mb-auto">chmod 改變使用權限指令 - 常用參數...</p>
-              <a class="btn btn-outline-secondary stretched-link" href="#command-chmod">閱讀更多</a>
+              <h3 class="mb-0">解決 GitHub - remote: Invalid username or password 問題</h3>
+              <div class="mb-1 text-muted">August 1, 2021</div>
+              <p class="mb-auto">當你在 Git Bash 執行 git push 時發生 remote 錯誤...</p>
+              <a class="btn btn-outline-secondary stretched-link" href="#git-remote-error">閱讀更多</a>
             </div>
             <div class="col-auto d-none d-lg-block">
-              <img class="bd-placeholder-img"  width="200" height="250"  src="https://images.pexels.com/photos/2004161/pexels-photo-2004161.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
+              <img class="bd-placeholder-img"  width="200" height="250"  src="https://cdn.pixabay.com/photo/2020/06/12/14/07/code-5290465_960_720.jpg" alt="解決 GitHub - remote: Invalid username or password 問題">
             </div>
           </div>
         </div>
@@ -214,6 +211,37 @@
             </div>
           </article>
 
+          <article class="blog-post" id="git-remote-error">
+            <h2 class="blog-post-title">解決 GitHub - remote: Invalid username or password 問題</h2>
+            <p class="blog-post-meta">August 1, 2021&emsp;|&emsp;技術</p>
+            <h3>Git Bash 錯誤訊息</h3>
+            <p>當你在執行 git push 並且確定在 Git Bash 輸入對的帳號密碼，但仍出現下列訊息:</p>
+            <div class="code-block">
+              <code>
+                remote: Invalid username or password. <br>
+                fatal: Authentication failed for 'https://github.com/你的帳號/blog.git/'
+              </code>
+            </div>
+            <p>其錯誤原因要檢查登入方式是不是有設定了兩步驟驗證(Two-factor authentication)。</p>
+            <h3 class="mt-5">解決方式: Personal access tokens</h3>
+            <p>在 GitHub 頁面點選個人頭像，再按下列選單順序點到最後的 Personal access tokens 選項。</p>
+            <div class="code-block">
+              <pre><code>Account settings / Developer settings / Personal access tokens</code></pre>
+            </div>
+            <p>點選 <span class="btn btn-sm btn-outline-dark disabled">Generate new token</span> 鈕，建立新的 token。</p>
+            <p>在 <b>New personal access token</b> 頁面上:
+              <ul>
+                <li>輸入該 token 的用途，以方便日後辨示；</li>
+                <li>選擇 token 的有效期限；勾選該 token 允許使用的權限範圍；</li>
+                <li>最後按 <span class="btn btn-sm btn-success disabled">Generate token</span> 生成token。</li>
+              </ul>
+              </p>
+            <img class="img-thumbnail" src="./assets/img/git-remote-error_token_setting.jpg" alt="New personal access token">
+            <p class="mt-5">請妥善保存 token，token 生成後只會出現在畫面一次，之後若忘記或到期就需要再重新生成一個。</p>
+            <img class="img-thumbnail" src="./assets/img/git-remote-error_token.jpg" alt="New personal access token">
+            <p class="mt-5">之後這組 token 就可以<span class="text-danger">取代登入密碼</span>，來執行 git 的相關動作了。</p>
+          </article>
+
           <nav class="blog-pagination" aria-label="Pagination">
             <a class="btn btn-outline-primary" href="#">舊文章</a>
             <a class="btn btn-outline-secondary disabled" href="#" tabindex="-1" aria-disabled="true">最新文章</a>
@@ -253,6 +281,13 @@
                   </div>
                   <small class="text-muted">August 1, 2021</small>
                 </a>
+                <a href="#git-remote-error" class="list-group-item list-group-item-action">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">解決 GitHub - remote: Invalid username or password 問題</h5>
+                    <small>技術</small>
+                  </div>
+                  <small class="text-muted">August 1, 2021</small>
+                </a>
               </ul>
             </div>
 
@@ -269,16 +304,22 @@
       </div>
     </main>
 
-    <footer class="blog-footer">
+    <footer class="blog-footer bg-dark">
       <p>Copyright © Winnie's  mini  Blog</p>
     </footer>
     <!-- Back to top -->
-    <a href="#" class="btn btn-outline-secondary btn-lg position-fixed" style="bottom:5%; right:10%;" data-bs-toggle="tooltip" data-bs-placement="top" title="Back to top">
+    <a href="#" class="btn btn-outline-secondary btn-lg position-fixed" style="bottom:5%; right:6%;" data-bs-toggle="tooltip" data-bs-placement="top" title="Back to top">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-bar-up" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5zm-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5z" />
         </svg>
     </a>
     <!-- Bootstrap core JS -->
     <script src="./assets/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script>
+      var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+      })
+    </script>
   </body>
 </html>
