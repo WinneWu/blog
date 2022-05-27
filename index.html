@@ -69,6 +69,20 @@
           <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
             <div class="col p-4 d-flex flex-column position-static">
               <strong class="d-inline-block mb-2 text-primary">技術</strong>
+              <h3 class="mb-0">grep 搜索檔案內容指令</h3>
+              <div class="mb-1 text-muted">May 27, 2022</div>
+              <p class="card-text mb-auto">grep 搜索檔案內容指令 - 常用參數...</p>
+              <a class="btn btn-outline-secondary stretched-link" href="#command-grep">閱讀更多</a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img class="bd-placeholder-img"  width="200" height="250"  src="https://images.pexels.com/photos/2004161/pexels-photo-2004161.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="tar 壓縮與解壓縮指令">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 d-none">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-primary">技術</strong>
               <h3 class="mb-0">tar 壓縮與解壓縮指令</h3>
               <div class="mb-1 text-muted">August 3, 2021</div>
               <p class="card-text mb-auto">tar 壓縮與解壓縮指令 - 常用參數...</p>
@@ -97,6 +111,30 @@
       <!-- 文章區 -->
       <div class="row g-5">
         <div class="col-md-8">
+          <article class="blog-post" id="command-grep">
+            <h2 class="blog-post-title">grep 搜索檔案內容指令</h2>
+            <p class="blog-post-meta">May 27, 2022&emsp;|&emsp;技術</p>
+            <h3>常用參數</h3>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th width="50">參數</th>
+                        <th>說明</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>-i</td>
+                        <td>搜索時忽略大小寫問題</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3 class="mt-5">範例</h3>
+            <div class="code-block">
+              <pre class="mb-0"><code>grep -i <span class="badge bg-secondary">"keyword"</span> <span class="badge bg-secondary">file name</span></code></pre>
+            </div>
+          </article>
+          <hr class="my-5">
           <article class="blog-post" id="command-tar">
             <h2 class="blog-post-title">tar 壓縮與解壓縮指令</h2>
             <p class="blog-post-meta">August 3, 2021&emsp;|&emsp;技術</p>
@@ -148,7 +186,7 @@
               <pre class="mb-0"><code>tar -xzvf <span class="badge bg-secondary">壓縮檔名稱.tgz</span></code></pre>
             </div>
           </article>
-
+          <hr class="my-5">
           <article class="blog-post" id="command-chmod">
             <h2 class="blog-post-title">chmod 改變使用權限指令</h2>
             <p class="blog-post-meta">August 2, 2021&emsp;|&emsp;技術</p>
@@ -182,7 +220,7 @@
               <pre class="mb-0"><code>chmod -R 754 <span class="badge bg-secondary">目錄名稱</span></code></pre>
             </div>
           </article>
-
+          <hr class="my-5">
           <article class="blog-post" id="command-chown">
             <h2 class="blog-post-title">chown 改變檔案擁有者指令</h2>
             <p class="blog-post-meta">August 1, 2021&emsp;|&emsp;技術</p>
@@ -210,7 +248,7 @@
               <pre class="mb-0"><code>chown www-data:www-data <span class="badge bg-secondary">檔案名稱</span></code></pre>
             </div>
           </article>
-
+          <hr class="my-5">
           <article class="blog-post" id="git-remote-error">
             <h2 class="blog-post-title">解決 GitHub - remote: Invalid username or password 問題</h2>
             <p class="blog-post-meta">August 1, 2021&emsp;|&emsp;技術</p>
@@ -241,7 +279,7 @@
             <img class="img-thumbnail" src="./assets/img/git-remote-error_token.jpg" alt="New personal access token">
             <p class="mt-5">之後這組 token 就可以<span class="text-danger">取代登入密碼</span>，來執行 git 的相關動作了。</p>
           </article>
-
+          <hr class="my-5">
           <nav class="blog-pagination" aria-label="Pagination">
             <a class="btn btn-outline-primary" href="#">舊文章</a>
             <a class="btn btn-outline-secondary disabled" href="#" tabindex="-1" aria-disabled="true">最新文章</a>
@@ -269,6 +307,13 @@
             <div class="p-4">
               <h3>文章</h3>
               <ul class="list-group list-group-flush">
+                <a href="#command-grep" class="list-group-item list-group-item-action">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">grep 搜索檔案內容指令</h5>
+                    <small>技術</small>
+                  </div>
+                  <small class="text-muted">May 27, 2022</small>
+                </a>
                 <a href="#command-tar" class="list-group-item list-group-item-action">
                   <div class="d-flex w-100 justify-content-between">
                     <h5 class="mb-1">tar 壓縮與解壓縮指令</h5>
