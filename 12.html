@@ -1,0 +1,726 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Blog">
+    <meta name="author" content="Winnie">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>Winnie's mini Blog:::12種礦物鹽</title>
+    <link rel="canonical" href="https://winnewu.github.io/blog/">
+    <!-- Bootstrap core CSS -->
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+
+    <!-- Custom styles for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900&display=swap" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="./assets/css/blog.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <div class="container">
+      <header class="blog-header py-3">
+        <div class="row flex-nowrap justify-content-between align-items-center">
+          <div class="col-4 pt-1"></div>
+          <div class="col-4 text-center">
+            <span class="blog-header-logo text-dark">Winnie's&nbsp;</span>
+            <span class="link-secondary">mini Blog</span>
+          </div>
+          <div class="col-4 d-flex justify-content-end align-items-center">
+            <!-- <a class="link-secondary" href="#" aria-label="Search">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-3" role="img" viewBox="0 0 24 24"><title>Search</title><circle cx="10.5" cy="10.5" r="7.5"/><path d="M21 21l-5.2-5.2"/></svg>
+            </a>
+            <a class="btn btn-sm btn-outline-secondary" href="#">Sign up</a> -->
+          </div>
+        </div>
+      </header>
+      <!-- Nav list -->
+      <div class="nav-scroller py-1 mb-2">
+        <nav class="nav d-flex justify-content-between">
+          <!--
+          <a class="p-2 link-secondary" href="#">Technology</a>
+          <a class="p-2 link-secondary" href="#">Design</a>
+          <a class="p-2 link-secondary" href="#">Travel</a> -->
+        </nav>
+      </div>
+    </div>
+
+    <main class="container">
+     
+      <!-- 文章區 -->
+      <div class="row g-5">
+        <div class="col-md-8">
+          <article class="blog-post" id="command-grep">
+            <h2 class="blog-post-title">12種礦物鹽</h2>
+            <p class="blog-post-meta">July 14, 2023&emsp;|&emsp;順勢療法</p>
+            <p class="mb-0"><span class="text-decoration-underline">排毒吃法</span>順序如下：</p>
+            <p>轉換分解：<span id="step_0"></span></p>
+            <p>清除排毒：<span id="step_1"></span></p>
+            <p>修補組合：<span id="step_2"></span></p>
+            <p>分佈滋養：<span id="step_3"></span></p>
+            <p class="mt-4">
+                每兩天吃一種號碼，每天三次，一次兩至三顆，空腹效果較好。<br>
+                如②號吃兩天後，接著吃⑥號吃兩天，再吃⑩號。接著④、⑧、⑨、①…，正常需時 24 天吃完一輪。
+            </p>
+            <p class="mt-4 mb-0"><span class="text-decoration-underline">一般吃法</span>如下：</p>
+            <p>急症</p>
+            <!-- 快速查找 -->
+            <div class="input-group mt-5">
+                <input type="text" class="form-control border-secondary" name="keyword_tag" placeholder="症狀關鍵字搜尋">
+                <button class="btn btn-outline-secondary" type="button" onclick="clear_search_tag();">清除</button>
+                <button class="btn btn-secondary" type="button" style="width:146px;" onclick="search_tag();">搜尋</button>
+            </div>
+            <div class="card border-secondary my-3">
+                <div class="card-header text-white bg-secondary">快速查找</div>
+                <div class="card-body text-secondary">
+                    <h5 class="card-title">生理</h5>
+                    <p class="card-text d-flex align-content-start flex-wrap" id="tag_physiology_block"></p>
+                    <h5 class="card-title mt-5">心理</h5>
+                    <p class="card-text d-flex align-content-start flex-wrap" id="tag_psychology_block"></p>
+                </div>
+                <div class="card-footer bg-transparent border-secondary text-end">
+                    <div class="float-start search-result"></div>
+                    <button type="button" class="btn btn-outline-secondary" onclick="clear_search();">重置</button>
+                    <button type="button" class="btn btn-secondary" style="width:128px;" onclick="search();">查詢</button>        
+                </div>
+            </div><!-- end: 快速查找 -->
+            <!-- Content -->
+            <div id="blog_content_box"></div>
+          </article>
+
+
+
+
+          <hr class="my-5">
+          <article class="blog-post" id="command-tar">
+            <h2 class="blog-post-title">tar 壓縮與解壓縮指令</h2>
+            <p class="blog-post-meta">August 3, 2022&emsp;|&emsp;技術</p>
+            <h3>常用參數</h3>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th width="50">參數</th>
+                        <th>說明</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>-c</td>
+                        <td>打包檔案</td>
+                    </tr>
+                    <tr>
+                        <td>-x</td>
+                        <td>解開壓縮檔</td>
+                    </tr>
+                    <tr>
+                        <td>-t</td>
+                        <td>檢視壓縮檔的內容</td>
+                    </tr>
+                    <tr>
+                        <td>-z</td>
+                        <td>使用 gzip 壓縮</td>
+                    </tr>
+                    <tr>
+                        <td>-v</td>
+                        <td>顯示壓縮/解壓縮執行過程</td>
+                    </tr>
+                    <tr>
+                        <td>-P</td>
+                        <td>使用絕對路徑</td>
+                    </tr>
+                    <tr>
+                        <td>-f</td>
+                        <td>指定壓縮檔後的檔案名稱 (此參數的後面要接檔案名稱，通常是把 <span class="badge bg-dark">f</span> 參數放最後或是與分開使用)</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3 class="mt-5">壓縮範例</h3>
+            <div class="code-block">
+              <pre class="mb-0"><code>tar -czvf <span class="badge bg-secondary">壓縮檔名稱.tgz</span> <span class="badge bg-secondary">來源檔案</span></code></pre>
+            </div>
+            <h3 class="mt-5">解壓縮指令</h3>
+            <div class="code-block">
+              <pre class="mb-0"><code>tar -xzvf <span class="badge bg-secondary">壓縮檔名稱.tgz</span></code></pre>
+            </div>
+          </article>
+          <hr class="my-5">
+          <article class="blog-post" id="command-chmod">
+            <h2 class="blog-post-title">chmod 改變使用權限指令</h2>
+            <p class="blog-post-meta">August 2, 2022&emsp;|&emsp;技術</p>
+            <h3>常用參數</h3>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th width="50">參數</th>
+                        <th>說明</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>-R</td>
+                        <td>遞迴變更(所有檔案及其子目錄)</td>
+                    </tr>
+                    <tr>
+                        <td>權限</td>
+                        <td>基本權限字元為 <code>-rwxrwxrwx</code> (共9個)。<br>
+                          順序為三個角色 <span class="badge bg-dark">owner</span> <span class="badge bg-dark">group</span> <span class="badge bg-dark">others</span>，各別的角色分別擁有三個執行權限 <span class="badge bg-dark">read</span> <span class="badge bg-dark">write</span> <span class="badge bg-dark">execute</span> 而組成。<br>
+                          權限的分數為:<br> 4: r(read)<br> 2: w(write)<br> 1: x(execute) <br><br>
+                          例如: 當權限為<code>-rwxr-xr-x</code> 分數則是 <code>755</code> (owner擁有全部權限，group與others則有讀與執行的權限)。
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3 class="mt-5">範例</h3>
+            <div class="code-block">
+              <code class="text-muted"># 改權限為 -rwxr-xr--</code>
+              <pre class="mb-0"><code>chmod 754 <span class="badge bg-secondary">檔案名稱</span></code></pre>
+              <pre class="mb-0"><code>chmod -R 754 <span class="badge bg-secondary">目錄名稱</span></code></pre>
+            </div>
+          </article>
+          <hr class="my-5">
+          <article class="blog-post" id="command-chown">
+            <h2 class="blog-post-title">chown 改變檔案擁有者指令</h2>
+            <p class="blog-post-meta">August 1, 2022&emsp;|&emsp;技術</p>
+            <h3>常用參數</h3>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th width="50">參數</th>
+                        <th>說明</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>-R</td>
+                        <td>遞迴變更(所有檔案及其子目錄)</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3 class="mt-5">範例</h3>
+            <div class="code-block">
+              <pre class="mb-0"><code>chown <span class="badge bg-secondary">使用者:使用者群組</span> <span class="badge bg-secondary">檔案名稱</span></code></pre>
+              <pre class="mb-0"><code>chown -R <span class="badge bg-secondary">使用者:使用者群組</span> <span class="badge bg-secondary">目錄名稱</span></code></pre>
+              <br>
+              <code class="text-muted"># 原檔案擁有者為root，改為www-data</code>
+              <pre class="mb-0"><code>chown www-data:www-data <span class="badge bg-secondary">檔案名稱</span></code></pre>
+            </div>
+          </article>
+          <hr class="my-5">
+          <article class="blog-post" id="git-remote-error">
+            <h2 class="blog-post-title">解決 GitHub - remote: Invalid username or password 問題</h2>
+            <p class="blog-post-meta">August 1, 2022&emsp;|&emsp;技術</p>
+            <h3>Git Bash 錯誤訊息</h3>
+            <p>當你在執行 git push 並且確定在 Git Bash 輸入對的帳號密碼，但仍出現下列訊息:</p>
+            <div class="code-block">
+              <code>
+                remote: Invalid username or password. <br>
+                fatal: Authentication failed for 'https://github.com/你的帳號/blog.git/'
+              </code>
+            </div>
+            <p>其錯誤原因要檢查登入方式是不是有設定了兩步驟驗證(Two-factor authentication)。</p>
+            <h3 class="mt-5">解決方式: Personal access tokens</h3>
+            <p>在 GitHub 頁面點選個人頭像，再按下列選單順序點到最後的 Personal access tokens 選項。</p>
+            <div class="code-block">
+              <pre><code>Account settings / Developer settings / Personal access tokens</code></pre>
+            </div>
+            <p>點選 <span class="btn btn-sm btn-outline-dark disabled">Generate new token</span> 鈕，建立新的 token。</p>
+            <p>在 <b>New personal access token</b> 頁面上:
+              <ul>
+                <li>輸入該 token 的用途，以方便日後辨示；</li>
+                <li>選擇 token 的有效期限；勾選該 token 允許使用的權限範圍；</li>
+                <li>最後按 <span class="btn btn-sm btn-success disabled">Generate token</span> 生成token。</li>
+              </ul>
+              </p>
+            <img class="img-thumbnail" src="./assets/img/git-remote-error_token_setting.jpg" alt="New personal access token">
+            <p class="mt-5">請妥善保存 token，token 生成後只會出現在畫面一次，之後若忘記或到期就需要再重新生成一個。</p>
+            <img class="img-thumbnail" src="./assets/img/git-remote-error_token.jpg" alt="New personal access token">
+            <p class="mt-5">之後這組 token 就可以<span class="text-danger">取代登入密碼</span>，來執行 git 的相關動作了。</p>
+          </article>
+          <!-- <hr class="my-5">
+          <nav class="blog-pagination" aria-label="Pagination">
+            <a class="btn btn-outline-primary" href="#">舊文章</a>
+            <a class="btn btn-outline-secondary disabled" href="#" tabindex="-1" aria-disabled="true">最新文章</a>
+          </nav> -->
+
+        </div>
+
+        <!-- right side -->
+        <div class="col-md-4">
+          <div class="position-sticky" style="top: 1rem;">
+            <!-- 廣告區 -->
+            <div class="p-4 d-none">
+              <!-- <h4 class="fst-italic" >Elsewhere</h4> -->
+              <h3>AP策略聯盟</h3>
+              <ol class="list-unstyled">
+                <li><iframe src="https://www.books.com.tw/sticker/book66/" width="175" height="270" frameborder="0" scrolling="no" marginwidth="0" allowtransparency="true"></iframe></li>
+              </ol>
+            </div>
+            <!-- About -->
+            <div class="p-4 mb-3 bg-light rounded d-none">
+              <h4 class="fst-italic">About</h4>
+              <p class="mb-0">Just a mini blog. A little bit about my articles, content, or something else entirely.</p>
+            </div>
+            <!-- 文章列表 -->
+            <div class="p-4">
+              <h3>索引</h3>
+              <ul class="list-group list-group-flush" id="index_box"></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="blog-footer bg-dark">
+      <p>Copyright © Winnie's  mini  Blog</p>
+    </footer>
+    <!-- Back to top -->
+    <a href="#" class="btn btn-outline-secondary btn-lg position-fixed" style="bottom:5%; right:6%;" data-bs-toggle="tooltip" data-bs-placement="top" title="Back to top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-bar-up" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5zm-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5z" />
+        </svg>
+    </a>
+    <!-- Bootstrap core JS -->
+    <script src="./assets/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="./assets/js/lodash.min.js"></script>
+    <script>
+        // 排毒吃法順序
+        const stepList = [
+            ["02", "06", "10"],
+            ["04", "08", "09"],
+            ["01", "12", "03"],
+            ["07", "05", "11"]
+        ];        
+        // physiology 生理 "": "",
+        const physiologyList = {
+            "1" : "有彈性的組織(筋、繃帶、血管和肌肉的拉緊作用)",
+            "2": "皮膚鬆弛",
+            "3" : "器官下垂",
+            "4": "妊娠",
+            "5": "分娩",
+            "6": "骨折",
+            "7": "骨質疏鬆",
+            "8": "骨骼發育不良",
+            "9": "嬰兒牙疼",
+            "10": "肌肉抽筋",
+            "11": "臂腿內發癢",
+            "12": "流鼻血",
+            "13": "病後身體些弱",
+            "14": "兒童疾病",
+            "15": "貧血",
+            "16": "開始階段的感冒 (高燒,發燒,發炎)",
+            "17": "著涼",
+            "18": "創傷流血",
+            "19": "夾傷",
+            "20": "扭傷",
+            "21": "身體供血故障",
+            "22": "記憶力減弱",
+            "23": "第二發炎階段 (高燒,發燒,發炎)",
+            "24": "耳朵、眼睛、咽喉喉嚨疾病",
+            "25": "支氣管炎",
+            "26": "肺膜炎症",
+            "27": "關節",
+            "28": "黏液囊",
+            "29": "肌腱鞘炎症",
+            "30": "胃腸黏膜炎",
+            "31": "失眠",
+            "32": "憂鬱",
+            "33": "精疲力盡",
+            "34": "記憶力減退",
+            "35": "心臟虛弱",   
+            "36": "肌肉衰弱",
+            "37": "癱瘓的感覺",
+            "38": "兒童多動症", 
+            "39": "神經哮喘",
+
+            "40": "第三發炎階段 (高燒,發燒,發炎)",
+            "41": "耳朵、鼻、咽喉喉嚨",
+            "42": "黏液膜炎",
+            "43": "晚期炎症",
+            "44": "肝疼痛",            
+            "45": "腎炎",
+            "46": "風濕病痛",
+            "47": "頭痛",
+            "48": "噁心",
+            "49": "臉部",
+            "50": "頭部",            
+            "51": "牙齒",
+            "52": "神經痛",
+            "53": "內耳腫引起的耳聾",
+            "54": "胃痛",
+            "55": "脹氣",
+            "56": "肌肉酸痛"
+
+            // ,            
+            // "": "",
+            // "": "",
+            // "": "",
+            // "": "",
+            // "": "",
+            // "": "",            
+            // "": "",
+            // "": "",
+            // "": "",
+
+
+        };
+        // psychology 心理
+        const psychologyList = {
+            "1" : "提高工作能力",
+            "2": "提高進取精神",
+            "3" : "增加力量",
+            "4": "提高注意力",
+            "5": "面無血色",
+            "6": "貧血",
+            "7": "骨骼堅固",
+            "8": "骨牙齒堅固",
+            "9": "清除肌肉抽筋",
+            "10": "強化免疫系統",
+            "11": "悲傷",
+            "12": "憤怒",
+            "13": "精神壓抑",
+            "14": "不安",
+            "15": "失眠",
+            "16": "促進自我堅持",
+            "17": "心理上的解毒療養",
+            "18": "給人能量",
+            "19": "使肌肉興奮",
+            "20": "需要光和暖",
+            "21": "易怒",
+            "22": "忌妒",
+            "23": "壞情緒",
+            "24": "心理上的緊張",
+            "25": "生理上的緊張"
+
+            // "": "",
+            // "": "",
+            // "": "",
+            // "": "",
+            // "": "",
+        };
+        // 12種礦物鹽
+        const twelveList = {
+                "twelve-01": {
+                    "title": "① 氟化鈣",
+                    "chemical_name": "Calcarea Fluorica",
+                    "alias": "拉緊糖球",
+                    "desc": "氟化鈣對於所有有彈性的組織。",
+                    "physiology": "有彈性的組織、筋、繃帶、血管和肌肉都有拉緊的作用，皮膚鬆弛和器官下垂都可以用這種鹽。對於妊娠和分娩也很有幫助。",
+                    "psychology": "可以幫助提高工作能力和進取精神，可以增加力量和提高注意力。",
+                    "physiology_search_idx": [1,2,3,4,5],
+                    "psychology_search_idx": [1,2,3,4]
+            },
+            "twelve-02": {
+                    "title": "② 磷酸鈣",
+                    "chemical_name": "Calcarea Phosphoric",
+                    "alias": "增強體質和痊癒的糖球",
+                    "desc": "磷酸鈣是生病之後重要的一種重建健康的糖球，它作用於細胞膜參與形成蛋白質和堅強的骨骼質量。",
+                    "physiology": "骨折、骨質疏鬆、童年和少年階段骨骼發育不良、嬰兒牙疼、肌肉抽筋、臂腿內發癢、流鼻血、病後身體些弱。",
+                    "psychology": "這種鹽適用於面無血色、貧血之人，它讓骨骼和牙齒更加堅固、清除肌肉抽筋，並且強化免疫系統。",
+                    "physiology_search_idx": [6,7,8,9,10,11,12,13],
+                    "psychology_search_idx": [5,6,7,8,9,10]
+            }, 
+            "twelve-03": {
+                    "title": "③ 磷酸鐵",
+                    "chemical_name": "Ferrum Phosphoricum",
+                    "alias": "緊急情況糖球",
+                    "desc": "磷酸鐵適用於所有突然發生的疾病，適用疾病開始階段所有高燒、發炎的過程，同時適用於新鮮傷口，它支持鐵的新陳代謝。",
+                    "physiology": "兒童疾病、貧血，開始階段的感冒、著涼、創傷流血、夾傷、扭傷、身體供血故障、記憶力減弱。",
+                    "psychology": "適用於悲傷、憤怒、精神壓抑、不安、失眠的人，它能促進自我堅持力。",
+                    "physiology_search_idx": [14,15,16,17,18,19,20,21,22],
+                    "psychology_search_idx": [11,12,13,14,15,16]
+            }, 
+            "twelve-04": {
+                    "title": "④ 氯化鉀",
+                    "chemical_name": "Kali Muriaticum",
+                    "alias": "解毒糖球",
+                    "desc": "氯化鉀在體內消除有毒物質，將其衝出身體、消解結締組織，也被用做第二發炎階段的糖球。",
+                    "physiology": "引起高燒的耳、眼、咽喉疾病、支氣管炎、肺膜炎症、關節、黏液囊和肌腱鞘炎症、胃腸黏膜炎。",
+                    "psychology": "這麼鹽不僅適用於身體上的解毒而且也適用於心理上的解毒療養。",
+                    "physiology_search_idx": [23, 24,25,26,27,28,29,30],
+                    "psychology_search_idx": [17]
+            }, 
+            "twelve-05": {
+                    "title": "⑤ 磷酸鉀",
+                    "chemical_name": "Kali Phosphoricum",
+                    "alias": "神經糖球",
+                    "desc": "磷酸鉀穩定地作用於神經和肌肉細胞，它可以預防組織萎縮和細胞分解，它是氧氣傳輸者。",
+                    "physiology": "失眠、憂鬱、精疲力盡、記憶力減退、心臟虛弱、肌肉衰弱、癱瘓的感覺、兒童多動症、神經哮喘。",
+                    "psychology": "這種鹽能給人能量，並且大多數情況下作用快，它能使肌肉興奮，包括心肌。對於精神和心情來說，它可以像光和暖一樣有益。",
+                    "physiology_search_idx": [31,32,33,34,35,36,37,38,39],
+                    "psychology_search_idx": [18,19,20]
+            }, 
+            "twelve-06": {
+                    "title": "⑥ 硫酸鉀",
+                    "chemical_name": "Kali Sulphuricum",
+                    "alias": "總清潔劑",
+                    "desc": "硫酸鉀這種鹽可以作用於所有長期頑固疾病的第三個發炎階段，它使排泄和解毒程序開始進行，使每一個療法運用，都可以透過硫化鉀獲得加強。",
+                    "physiology": "耳、鼻、咽喉、黏液膜炎、晚期炎症、肝疼痛、腎炎、風濕病痛、頭痛、噁心，臉部、頭部、牙齒、神經痛，內耳腫引起的耳聾、胃痛、脹氣、肌肉酸痛。",
+                    "psychology": "這種鹽可以幫助易怒、忌妒、壞情緒、心理上和生理上緊張的人群。",
+                    "physiology_search_idx": [40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56],
+                    "psychology_search_idx": [21,22,23,24,25]
+            }, 
+            "twelve-07": {
+                    "title": "⑦ 磷酸鎂",
+                    "chemical_name": "Magnesium Phosphoric",
+                    "alias": "去痛糖球",
+                    "desc": "磷酸鎂有緩解痙孿、提神刺激的作用。為了較快地發揮出效力，也可以把十顆磷酸鎂糖球放入杯子裡，用熱水溶解，每隔二至五分鐘喝一大口。",
+                    "physiology": "心臟、胃、膀胱、小腿肚痙孿、腎膽絞痛、神經痛、痙孿、咳嗽、偏頭痛、哮喘、心緊、夜晚小腿肚痙孿、為分娩作準備。",
+                    "psychology": "這種鹽可以幫助那些尋精神明淨和寧靜，或者是需要適應新的生活環境的人們，它可以讓人精神明朗起來，使問題的解決變得容易。",
+                    "physiology_search_idx": [],
+                    "psychology_search_idx": []
+            }, 
+            "twelve-08": {
+                    "title": "⑧ 氯化鈉",
+                    "chemical_name": "Natrum Muriaticum",
+                    "alias": "新陳代謝糖球",
+                    "desc": "氯化鈉調節體內水的平衡，它為結締組織供水或者排水，把有毒物質排除，促進細胞的新生，特別是它能促進紅血球的再造、在胃部形成必要的胃酸。",
+                    "physiology": "感冒、流鼻涕、對冷敏感、頭皮屑、對很鹹和味重的食物嘴饞、胃灼熱、胃脹氣、心刺痛、血管內博擊聲、生育能力衰弱、背部週期性疼痛。",
+                    "psychology": "這種鹽可以幫助偏頭痛和精神抑鬱、願意退出來舔作傷口的人群。幫助人們去原諒與忘卻。",
+                    "physiology_search_idx": [],
+                    "psychology_search_idx": []
+            }, 
+            "twelve-09": {
+                    "title": "⑨ 磷酸鈉",
+                    "chemical_name": "Natrum Phosphoricum",
+                    "alias": "中和糖球",
+                    "desc": "磷酸鈉能中和體內多餘的酸，促進新陳代謝、排除腎、膀胱和膽內的沉積。",
+                    "physiology": "座瘡、油性頭髮和膚質，風濕病、坐骨神經痛、腰部風濕痛、靜脈曲張、靜脈炎、腎炎、黃疸病、體味酸、酸性胃腸症狀。",
+                    "psychology": "這種鹽可以幫助所有生理上和心理上有‘酸’的人們，同時它可以調節節食期間的新陳代謝。",
+                    "physiology_search_idx": [],
+                    "psychology_search_idx": []
+            }, 
+            "twelve-10": {
+                    "title": "⑩ 硫酸鈉",
+                    "chemical_name": "Natum Sulphuricum",
+                    "alias": "排泄糖球",
+                    "desc": "硫酸鈉能除去分解物中的水，以此加速其分解幫助實現順暢的排泄、刺激膽汁形成，並且參與糖份和肝臟的新陳代謝，對結腸運動發生作用，促進白血球分解。",
+                    "physiology": "膽汁淤積、肝臟疼痛、便秘、腹瀉、風濕痛、腎病、失禁、蜂窩組織炎、水腫、痛風、腺腫、膿腫。",
+                    "psychology": "這種鹽在體內起的作用有如催化劑、發動劑和加速劑，它能幫助人們的心靈更好地重建、更好的為自己著想。",
+                    "physiology_search_idx": [],
+                    "psychology_search_idx": []
+            }, 
+            "twelve-11": {
+                    "title": "⑪ 矽",
+                    "chemical_name": "Silicea",
+                    "alias": "美容糖球",
+                    "desc": "矽是締結組織的組成部份，改善抵抗力和身體穩固性。它可以作為頭髮和指甲的生物美容品，可以促進膠原質形成、刺激體內抗禦感染功能在所有發炎化膿的情況下，它是除硫化鈣之外的最佳選擇。",
+                    "physiology": "膿包、瘺、腺體化膿、牙潰瘍、動脈硬化、麥粒腫、皮膚搔癢、脫髮、指甲、頭髮易斷裂，聲音嘶啞、劇烈咳嗽、扁桃腺炎、痔瘡。",
+                    "psychology": "這種鹽能使人身體和心裡都變年輕美麗，它能使臉部皮膚變光滑、使眼睛變圓、防止脫髮和頭髮變白，使用散發一種精神個人魅力。",
+                    "physiology_search_idx": [],
+                    "psychology_search_idx": []
+            }, 
+            "twelve-12": {
+                    "title": "⑫ 硫酸鈣",
+                    "chemical_name": "Calcarea Sulphurica",
+                    "alias": "衝破封鎖的糖球",
+                    "desc": "硫酸鈣能夠把深處的膿排除，是一種可以衝破封鎖的糖球，它能提高血液凝固性、淨化淋巴、促進荷爾蒙(控制新陳代謝)和刺激新陳代謝的形成。",
+                    "physiology": "膿包、膿腫、化膿性扁桃腺炎、腣胱癌和腎炎、慢性感冒、化膿的頷骨洞、結膜。",
+                    "psychology": "這種鹽不僅可以幫助人的身體，也可以幫助人的心情，從垃圾中解脫出來，在經過困難的程序之後，人獲得的新力量，可以給自己更多的自信。",
+                    "physiology_search_idx": [],
+                    "psychology_search_idx": []
+            }                      
+        };
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+          return new bootstrap.Tooltip(tooltipTriggerEl)
+        });
+
+        var docReady = function docReady(fn) {
+          // see if DOM is already available
+          if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', fn);
+          } else {
+            setTimeout(fn, 1);
+          }
+        };
+
+        var init_page = () => {
+            // 排毒吃法
+            _.forEach(stepList, function (value, key) {
+                const el = document.querySelector(`#step_${key}`);
+                let str = '';
+                _.forEach(value, function (val) {
+                    str += `<span class="pe-2">${twelveList[`twelve-${val}`].title}</span>`;
+                });
+                el.innerHTML = str;
+            });
+            // 快速索引區 Index
+            const el = document.querySelector('#index_box');
+            el.innerHTML = '';           
+            _.forEach(twelveList, function (value, key) {
+                let a = document.createElement('a');
+                a.setAttribute('href', `#${key}`);
+                a.setAttribute('class', "list-group-item list-group-item-action");
+                a.innerHTML = `
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">${value.title}</h5>
+                    </div>
+                    <small class="text-muted">${value.chemical_name}</small>`;   
+                el.appendChild(a);
+            });
+            // 生成快速查找: 症狀 Tag
+            search_tag();
+            // 內文
+            setArticleContent(twelveList);
+        };
+
+        // 內文
+        var setArticleContent = (data) => {
+            const el = document.querySelector('#blog_content_box');
+            el.innerHTML = ''; 
+            _.forEach(data, function (value, key) {
+                // content
+                let d = document.createElement('div');
+                d.setAttribute('class', 'code-block bg-light my-5');
+                d.innerHTML =
+                   `<h3 id="${key}">
+                        <span class="fw-bold">${value.title}</span>
+                        <small class="text-muted font-monospace fs-6">${value.chemical_name}&emsp;|&emsp;${value.alias}</small>
+                    </h3>
+                    <p>${value.desc}</p>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th width="50"></th>
+                                <th>說明</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>生理</td>
+                                <td>${value.physiology}</td>
+                            </tr>
+                            <tr>
+                                <td>心理</td>
+                                <td>${value.psychology}</td>
+                            </tr>
+                        </tbody>
+                    </table>`;   
+                  el.appendChild(d);
+            });
+        };
+
+        // 症狀 Tag
+        var setTag = (keyword = '') => {
+            let = physiology = {...physiologyList};
+            let = psychology = {...psychologyList};
+            if (keyword != "") {
+                // 生理
+                physiology = {};
+                _.forEach(physiologyList, function (value, key) {
+                    if (value.indexOf(keyword) >= 0) {
+                        physiology[key] = value;
+                    }
+                });
+                // 心理
+                psychology = {};
+                _.forEach(psychologyList, function (value, key) {
+                    if (value.indexOf(keyword) >= 0) {
+                        psychology[key] = value;
+                    }
+                });                 
+            }
+
+            // 生理
+            const el_physiology = document.querySelector('#tag_physiology_block');
+            el_physiology.innerHTML = '';
+            _.forEach(physiology, function (value, key) {
+                let d = document.createElement('div');
+                d.setAttribute('class', 'm-1');
+                d.innerHTML = 
+                   `<input type="checkbox" class="btn-check" id="btn-check-physiology-${key}" value="${key}" name="checkbox_physiology" autocomplete="off">
+                    <label class="btn btn-outline-secondary" for="btn-check-physiology-${key}">${value}</label>`;
+                el_physiology.appendChild(d);
+            });
+            // 心理
+            const el_psychology = document.querySelector('#tag_psychology_block');
+            el_psychology.innerHTML = '';
+            _.forEach(psychology, function (value, key) {
+                let d = document.createElement('div');
+                d.setAttribute('class', 'm-1');
+                d.innerHTML = 
+                   `<input type="checkbox" class="btn-check" id="btn-check-psychology-${key}" value="${key}" name="checkbox_psychology" autocomplete="off">
+                    <label class="btn btn-outline-secondary" for="btn-check-psychology-${key}">${value}</label>`;
+                el_psychology.appendChild(d);
+            });                 
+        };
+
+        // 快速查找: 症狀 => 礦鹽
+        var search = () => {
+            let res = [];
+            let data = {};
+            let selected = [];
+            // 生理, 心理 
+            ['#tag_physiology_block', '#tag_psychology_block'].forEach(function(type){
+                document.querySelectorAll(`${type} .btn-check[type="checkbox"]:checked`).forEach(function (el) {
+                    _.forEach(twelveList, function (t, k) {
+                        if (t.physiology_search_idx.indexOf(parseInt(el.value)) >= 0) {                        
+                            selected.push(k);
+                        }
+                    });
+                });
+            });
+            
+            // 去除重覆元素
+            selected = selected.filter(function (element, index, self) {
+                return self.indexOf(element) === index;
+            });
+
+            //const data = selected.map((e) => twelveList[e]);  // 原Key會不見
+            _.forEach(selected, function (value) {
+                data[value] = twelveList[value];
+                res.push(`<a href="#${value}" class="badge bg-primary-light text-primary text-decoration-none">${twelveList[value].title}</a>`);
+            });
+            document.querySelector('.search-result').innerHTML = res.join("&nbsp;");
+
+            if (selected.length > 0) {
+                setArticleContent(data);
+            }
+        }; 
+
+        // 清除: 快速查找
+        var clear_search = () => {
+            document.querySelector('.search-result').innerHTML = "";
+            document.querySelectorAll('.btn-check[type="checkbox"]').forEach(function (el) {
+                el.checked = false;
+            });
+            setArticleContent(twelveList);
+            clear_search_tag();
+        };
+        
+        // 關鍵字搜尋: 症狀 Tag
+        var search_tag = () => {
+            const keyword = document.querySelector('[name=keyword_tag]');
+            setTag(keyword.value.trim());
+            keyword.onkeydown = ({ key }) => {
+                if (key === "Enter") setTag(keyword.value.trim());
+            };            
+        };
+
+        // 清除: 症狀 Tag
+        var clear_search_tag = () => {
+            document.querySelector('[name=keyword_tag]').value = "";
+            setTag();
+        };
+
+        docReady(init_page);
+    </script>
+  </body>
+</html>
