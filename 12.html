@@ -70,17 +70,6 @@
           <article class="blog-post" id="command-grep">
             <h2 class="blog-post-title">12種礦物鹽</h2>
             <p class="blog-post-meta">July 14, 2023&emsp;|&emsp;順勢療法</p>
-            <p class="mb-0"><span class="text-decoration-underline">排毒吃法</span>順序如下：</p>
-            <p>轉換分解：<span id="step_0"></span></p>
-            <p>清除排毒：<span id="step_1"></span></p>
-            <p>修補組合：<span id="step_2"></span></p>
-            <p>分佈滋養：<span id="step_3"></span></p>
-            <p class="mt-4">
-                每兩天吃一種號碼，每天三次，一次兩至三顆，空腹效果較好。<br>
-                如②號吃兩天後，接著吃⑥號吃兩天，再吃⑩號。接著④、⑧、⑨、①…，正常需時 24 天吃完一輪。
-            </p>
-            <p class="mt-4 mb-0"><span class="text-decoration-underline">一般吃法</span>如下：</p>
-            <p>急症</p>
             <!-- 快速查找 -->
             <div class="input-group mt-5">
                 <input type="text" class="form-control border-secondary" name="keyword_tag" placeholder="症狀關鍵字搜尋">
@@ -101,157 +90,21 @@
                     <button type="button" class="btn btn-secondary" style="width:128px;" onclick="search();">查詢</button>        
                 </div>
             </div><!-- end: 快速查找 -->
+            <!-- 吃法 -->
+            <p class="mb-0"><span class="text-decoration-underline">排毒吃法</span>順序如下：</p>
+            <p>轉換分解：<span id="step_0"></span></p>
+            <p>清除排毒：<span id="step_1"></span></p>
+            <p>修補組合：<span id="step_2"></span></p>
+            <p>分佈滋養：<span id="step_3"></span></p>
+            <p class="mt-4">
+                每兩天吃一種號碼，每天三次，一次兩至三顆，空腹效果較好。<br>
+                如②號吃兩天後，接著吃⑥號吃兩天，再吃⑩號。接著④、⑧、⑨、①…，正常需時 24 天吃完一輪。
+            </p>
+            <p class="mt-4 mb-0"><span class="text-decoration-underline">一般吃法</span>如下：</p>
+            <p><b class="text-primary">急症 </b>每五分鐘含一顆，連續三次。<br><b class="text-primary">慢性病 </b>每天三、四次，每次二至五顆，年齡愈高愈多顆。 <br>一天之中最好不要混著吃多種不同的小糖球，但急症不在此限。</p>            
+            <!-- end: 吃法 -->
             <!-- Content -->
             <div id="blog_content_box"></div>
-          </article>
-
-
-
-
-          <hr class="my-5">
-          <article class="blog-post" id="command-tar">
-            <h2 class="blog-post-title">tar 壓縮與解壓縮指令</h2>
-            <p class="blog-post-meta">August 3, 2022&emsp;|&emsp;技術</p>
-            <h3>常用參數</h3>
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th width="50">參數</th>
-                        <th>說明</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>-c</td>
-                        <td>打包檔案</td>
-                    </tr>
-                    <tr>
-                        <td>-x</td>
-                        <td>解開壓縮檔</td>
-                    </tr>
-                    <tr>
-                        <td>-t</td>
-                        <td>檢視壓縮檔的內容</td>
-                    </tr>
-                    <tr>
-                        <td>-z</td>
-                        <td>使用 gzip 壓縮</td>
-                    </tr>
-                    <tr>
-                        <td>-v</td>
-                        <td>顯示壓縮/解壓縮執行過程</td>
-                    </tr>
-                    <tr>
-                        <td>-P</td>
-                        <td>使用絕對路徑</td>
-                    </tr>
-                    <tr>
-                        <td>-f</td>
-                        <td>指定壓縮檔後的檔案名稱 (此參數的後面要接檔案名稱，通常是把 <span class="badge bg-dark">f</span> 參數放最後或是與分開使用)</td>
-                    </tr>
-                </tbody>
-            </table>
-            <h3 class="mt-5">壓縮範例</h3>
-            <div class="code-block">
-              <pre class="mb-0"><code>tar -czvf <span class="badge bg-secondary">壓縮檔名稱.tgz</span> <span class="badge bg-secondary">來源檔案</span></code></pre>
-            </div>
-            <h3 class="mt-5">解壓縮指令</h3>
-            <div class="code-block">
-              <pre class="mb-0"><code>tar -xzvf <span class="badge bg-secondary">壓縮檔名稱.tgz</span></code></pre>
-            </div>
-          </article>
-          <hr class="my-5">
-          <article class="blog-post" id="command-chmod">
-            <h2 class="blog-post-title">chmod 改變使用權限指令</h2>
-            <p class="blog-post-meta">August 2, 2022&emsp;|&emsp;技術</p>
-            <h3>常用參數</h3>
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th width="50">參數</th>
-                        <th>說明</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>-R</td>
-                        <td>遞迴變更(所有檔案及其子目錄)</td>
-                    </tr>
-                    <tr>
-                        <td>權限</td>
-                        <td>基本權限字元為 <code>-rwxrwxrwx</code> (共9個)。<br>
-                          順序為三個角色 <span class="badge bg-dark">owner</span> <span class="badge bg-dark">group</span> <span class="badge bg-dark">others</span>，各別的角色分別擁有三個執行權限 <span class="badge bg-dark">read</span> <span class="badge bg-dark">write</span> <span class="badge bg-dark">execute</span> 而組成。<br>
-                          權限的分數為:<br> 4: r(read)<br> 2: w(write)<br> 1: x(execute) <br><br>
-                          例如: 當權限為<code>-rwxr-xr-x</code> 分數則是 <code>755</code> (owner擁有全部權限，group與others則有讀與執行的權限)。
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-            <h3 class="mt-5">範例</h3>
-            <div class="code-block">
-              <code class="text-muted"># 改權限為 -rwxr-xr--</code>
-              <pre class="mb-0"><code>chmod 754 <span class="badge bg-secondary">檔案名稱</span></code></pre>
-              <pre class="mb-0"><code>chmod -R 754 <span class="badge bg-secondary">目錄名稱</span></code></pre>
-            </div>
-          </article>
-          <hr class="my-5">
-          <article class="blog-post" id="command-chown">
-            <h2 class="blog-post-title">chown 改變檔案擁有者指令</h2>
-            <p class="blog-post-meta">August 1, 2022&emsp;|&emsp;技術</p>
-            <h3>常用參數</h3>
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th width="50">參數</th>
-                        <th>說明</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>-R</td>
-                        <td>遞迴變更(所有檔案及其子目錄)</td>
-                    </tr>
-                </tbody>
-            </table>
-            <h3 class="mt-5">範例</h3>
-            <div class="code-block">
-              <pre class="mb-0"><code>chown <span class="badge bg-secondary">使用者:使用者群組</span> <span class="badge bg-secondary">檔案名稱</span></code></pre>
-              <pre class="mb-0"><code>chown -R <span class="badge bg-secondary">使用者:使用者群組</span> <span class="badge bg-secondary">目錄名稱</span></code></pre>
-              <br>
-              <code class="text-muted"># 原檔案擁有者為root，改為www-data</code>
-              <pre class="mb-0"><code>chown www-data:www-data <span class="badge bg-secondary">檔案名稱</span></code></pre>
-            </div>
-          </article>
-          <hr class="my-5">
-          <article class="blog-post" id="git-remote-error">
-            <h2 class="blog-post-title">解決 GitHub - remote: Invalid username or password 問題</h2>
-            <p class="blog-post-meta">August 1, 2022&emsp;|&emsp;技術</p>
-            <h3>Git Bash 錯誤訊息</h3>
-            <p>當你在執行 git push 並且確定在 Git Bash 輸入對的帳號密碼，但仍出現下列訊息:</p>
-            <div class="code-block">
-              <code>
-                remote: Invalid username or password. <br>
-                fatal: Authentication failed for 'https://github.com/你的帳號/blog.git/'
-              </code>
-            </div>
-            <p>其錯誤原因要檢查登入方式是不是有設定了兩步驟驗證(Two-factor authentication)。</p>
-            <h3 class="mt-5">解決方式: Personal access tokens</h3>
-            <p>在 GitHub 頁面點選個人頭像，再按下列選單順序點到最後的 Personal access tokens 選項。</p>
-            <div class="code-block">
-              <pre><code>Account settings / Developer settings / Personal access tokens</code></pre>
-            </div>
-            <p>點選 <span class="btn btn-sm btn-outline-dark disabled">Generate new token</span> 鈕，建立新的 token。</p>
-            <p>在 <b>New personal access token</b> 頁面上:
-              <ul>
-                <li>輸入該 token 的用途，以方便日後辨示；</li>
-                <li>選擇 token 的有效期限；勾選該 token 允許使用的權限範圍；</li>
-                <li>最後按 <span class="btn btn-sm btn-success disabled">Generate token</span> 生成token。</li>
-              </ul>
-              </p>
-            <img class="img-thumbnail" src="./assets/img/git-remote-error_token_setting.jpg" alt="New personal access token">
-            <p class="mt-5">請妥善保存 token，token 生成後只會出現在畫面一次，之後若忘記或到期就需要再重新生成一個。</p>
-            <img class="img-thumbnail" src="./assets/img/git-remote-error_token.jpg" alt="New personal access token">
-            <p class="mt-5">之後這組 token 就可以<span class="text-danger">取代登入密碼</span>，來執行 git 的相關動作了。</p>
           </article>
           <!-- <hr class="my-5">
           <nav class="blog-pagination" aria-label="Pagination">
@@ -317,7 +170,7 @@
             "6": "骨折",
             "7": "骨質疏鬆",
             "8": "骨骼發育不良",
-            "9": "嬰兒牙疼",
+            "9": "嬰兒牙疼 / 長牙痛",
             "10": "肌肉抽筋",
             "11": "臂腿內發癢",
             "12": "流鼻血",
@@ -440,10 +293,10 @@
                     "title": "③ 磷酸鐵",
                     "chemical_name": "Ferrum Phosphoricum",
                     "alias": "緊急情況糖球",
-                    "desc": "磷酸鐵適用於所有突然發生的疾病，適用疾病開始階段所有高燒、發炎的過程，同時適用於新鮮傷口，它支持鐵的新陳代謝。",
+                    "desc": "磷酸鐵適用於所有突然發生的疾病，適用疾病開始階段所有高燒、發炎的過程，同時適用於新鮮傷口，它支持鐵的新陳代謝。<br>許多支氣管炎、支氣管肺炎或相關胸腔感染的毛病，特別是小孩子，使用「③ 磷酸鐵」非常有效！接著使用「④ 氯化鉀」，或和氯化鉀輪流使用，是很出色的搭配，已不需要其他的藥劑了。",
                     "physiology": "兒童疾病、貧血，開始階段的感冒、著涼、創傷流血、夾傷、扭傷、身體供血故障、記憶力減弱。",
                     "psychology": "適用於悲傷、憤怒、精神壓抑、不安、失眠的人，它能促進自我堅持力。",
-                    "physiology_search_idx": [14,15,16,17,18,19,20,21,22],
+                    "physiology_search_idx": [14,15,16,17,18,19,20,21,22,25],
                     "psychology_search_idx": [11,12,13,14,15,16]
             }, 
             "twelve-04": {
